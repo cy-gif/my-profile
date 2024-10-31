@@ -1,0 +1,208 @@
+.wrapper {
+    font-family: "Arial", sans-serif;
+    font-size: 13.5pt;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 22px;
+}
+
+/* Cartes avec changements subtils */
+.cardDiv {
+    background-color: #e0f8fa;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    border-radius: 11px;
+    width: 100%;
+    max-width: 568px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 12px;
+}
+
+.emoji {
+    font-size: 1.7rem;
+    margin-top: 0;
+}
+
+.cardDiv img {
+    border-radius: 48%;
+    width: 100%;
+    max-width: 148px;
+}
+
+/* Bouton avec modifications légères */
+.discoverBtn {
+    padding: 9px 16px;
+    background-color: #007a6c;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 9px;
+    text-align: center;
+    margin-top: 17px;
+}
+
+/* Conteneur d'images */
+.imageContainer {
+    width: 51%;
+    padding: 2.5%;
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Styles pour les petits écrans */
+@media (max-width: 768px) {
+    .cardDiv {
+        padding: 16px;
+        margin: 11px;
+    }
+    
+    .emoji {
+        font-size: 1.4rem;
+    }
+    
+    .discoverBtn {
+        padding: 7px 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardDiv {
+        padding: 13px;
+    }
+
+    .emoji {
+        font-size: 1.1rem;
+    }
+
+    .discoverBtn {
+        padding: 7px 9px;
+    }
+}
+
+/* Hero section légèrement ajustée */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 67vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.58);
+    z-index: 1;
+}
+
+.heroContainer {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: 31pt;
+    font-weight: 600;
+    text-align: center;
+}
+
+.hero p {
+    font-family: "Arial", sans-serif;
+    font-size: 17pt;
+    font-weight: 300;
+    text-align: center;
+}
+
+.hero a {
+    font-family: "Arial", sans-serif;
+    font-size: 17pt;
+    text-align: center;
+    background-color: #005040;
+    padding: 11px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    color: #ffffff;
+    margin: 19px;
+}
+
+/* Carte ajustée */
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1172px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+.cardWagon {
+    background-color: #ffffff;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 21px;
+    border-radius: 9px;
+    width: 100%;
+    max-width: 502px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 12px;
+    text-align: center;
+}
+
+.cardWagon p, .cardWagonBot p {
+    font-size: 14pt;
+    padding: 19px;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.cardWagon h3, .cardWagonBot h3 {
+    font-size: 18pt;
+    font-weight: 500;
+}
+
+.cardWagon img, .cardWagonBot img {
+    width: 158px;
+    height: 158px;
+    border-radius: 11%;
+}
+
+.cardWagonBot {
+    background-color: #ffffff;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 34px;
+    border-radius: 9px;
+    width: 100%;
+    max-width: 998px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 11px;
+}
+
+.cardWagonBot h3 {
+    font-size: 20pt;
+}
